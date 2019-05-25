@@ -3,7 +3,7 @@
 @brief Modelo de base de datos
 **/
 #create database katalog;
-use catalogoduida_db;
+use catalogo;
 
 create table user(
 	id int not null auto_increment primary key,
@@ -39,6 +39,21 @@ create table post (
 	name varchar(200) ,
 	code varchar(200) ,
 	description varchar(1000) ,
+
+	brand varchar(100) ,
+	presentation varchar(100) ,
+	ean13 varchar(256) ,
+	ean14 varchar(256) ,
+	package_least varchar(100) ,
+	package_wholesale varchar(100) ,
+	dimension_pallet varchar(100) ,
+	dimension_package varchar(100) ,
+	weight varchar(10) ,
+	price_grava decimal(10,4) ,
+	price_no_vat decimal(10,4) ,
+	discount_percentage decimal(10,4) ,
+	price_suggested decimal(10,4) ,
+	
 	offer_txt varchar(1000) ,
 	image varchar(255),	
 	link varchar(255),	
