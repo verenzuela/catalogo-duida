@@ -3,7 +3,7 @@ class Database {
 	public static $db;
 	public static $con;
 	function Database(){
-		$this->user="root";$this->pass="secret";$this->host="database";$this->ddbb="catalogo";
+		$this->user="root";$this->pass="GoogleCloud2018.";$this->host="localhost";$this->ddbb="catalogoduida_db";
 	}
 
 	function connect(){
